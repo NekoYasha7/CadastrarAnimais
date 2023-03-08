@@ -1,0 +1,74 @@
+Sub cadastrarAnimal()
+'
+' cadastrarAnimal Macro
+'
+
+'
+    Range("D5").Select
+    Selection.Copy
+    Sheets("Banco de Dados").Select
+    Range("G1").Select
+    Selection.End(xlDown).Select
+    Range("B1048576").Select
+    Selection.End(xlUp).Select
+    ActiveCell.Offset(1, 0).Range("A1").Select
+    ActiveSheet.Paste
+    Sheets("base").Select
+    Range("D6").Select
+    Application.CutCopyMode = False
+    Selection.Copy
+    Sheets("Banco de Dados").Select
+    Range("G1").Select
+    Selection.End(xlDown).Select
+    Range("C1048576").Select
+    Selection.End(xlUp).Select
+    ActiveCell.Offset(1, 0).Range("A1").Select
+    ActiveSheet.Paste
+    Sheets("base").Select
+    Range("D7").Select
+    Application.CutCopyMode = False
+    Selection.Copy
+    Sheets("Banco de Dados").Select
+    Range("G1").Select
+    Selection.End(xlDown).Select
+    Range("D1048576").Select
+    Selection.End(xlUp).Select
+    ActiveCell.Offset(1, 0).Range("A1").Select
+    ActiveSheet.Paste
+    Sheets("base").Select
+    Range("D8").Select
+    Application.CutCopyMode = False
+    Selection.Copy
+    Sheets("Banco de Dados").Select
+    Range("G1").Select
+    Selection.End(xlDown).Select
+    Range("E1048576").Select
+    Selection.End(xlUp).Select
+    ActiveCell.Offset(1, 0).Range("A1").Select
+    ActiveSheet.Paste
+    Sheets("base").Select
+    Range("D9").Select
+    Application.CutCopyMode = False
+    Selection.Copy
+    Sheets("Banco de Dados").Select
+    Range("G1").Select
+    Selection.End(xlDown).Select
+    Range("F1048576").Select
+    Selection.End(xlUp).Select
+    ActiveCell.Offset(1, 0).Range("A1").Select
+    ActiveSheet.Paste
+    Sheets("base").Select
+    Range("D5").Select
+    Application.CutCopyMode = False
+    Selection.ClearContents
+    Range("D7").Select
+    Selection.ClearContents
+    Range("D6").Select
+    ActiveCell.FormulaR1C1 = "6 anos"
+    Range("D8").Select
+    Selection.ClearContents
+    Range("D9").Select
+    Selection.ClearContents
+    Range("D6").Select
+    Selection.ClearContents
+End Sub
